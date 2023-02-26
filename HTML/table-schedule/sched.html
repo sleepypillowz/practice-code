@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h3 align="center">2Y2S Schedule</h3>
+
+  <!-- note: if you add rowspan you need to delete its occupied space -->
+  <table align="center" border="5" cellspacing="0"> <!-- width based on total width -->
+
+    <tr class="thead" bgcolor="grey">
+      <th colspan="2" width="100">Time</th>
+      <th width="100">Monday</th>
+      <th width="100">Tuesday</th>
+      <th width="100">Wednesday</th>
+      <th width="100">Thursday</th>
+      <th width="100">Friday</th>
+    </tr>
+
+    
+    <tr id="time1" align="center">
+      <td>7:00</td>
+      <td>7:30</td>
+      <td id="ph1"></td> <!-- placeholder for subjects -->
+  
+    </tr>
+
+    <tr id="time2" align="center">
+      <td>8:00</td>
+      <td>8:30</td>
+      <td id="ph2"></td>   
+    </tr>
+
+    <tr id="time3" align="center">
+      <td>9:00</td>
+      <td>9:30</td>
+      <td id="ph3"></td>
+      
+    </tr>
+  </table>
+
+ <script>
+
+  
+
+  //subject placeholder script
+  for (y=1; y<=3; y++) {
+    for(x=1; x<5; x++){ //loops until 1-5 clones is made
+      var element=document.getElementById("ph"+y);
+      var clone=element.cloneNode(true);
+      element.after(clone);
+    }
+  } 
+
+  //time script
+  for (y=1; y<=3; y++) {
+    for(x=1; x<5; x++){ //loops until 1-5 clones is made
+      var element=document.getElementById("time"+y);
+      var clone=element.cloneNode(true);
+      element.after(clone);
+    }
+  } 
+
+</script> 
+  
+</body>
+</html>

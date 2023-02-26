@@ -1,0 +1,13 @@
+table {
+    width: 600px;
+    background-color: black;    
+}
+
+tr {
+    background-color: lightgrey;
+}
+
+td {
+    width: 50px;
+}
+
