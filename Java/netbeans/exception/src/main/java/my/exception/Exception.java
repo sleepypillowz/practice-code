@@ -10,14 +10,14 @@ public class Exception {
         int[] values = {5,10,15,20,25};
         int dividend, divisor, quotient;
         
-        try{
-            
         System.out.print("Enter dividend: ");
         dividend = s.nextInt();
         
         System.out.print("Enter divisor: ");
         divisor = s.nextInt();
-         
+        
+        try{
+                     
         quotient = dividend/divisor;
         System.out.println(dividend + " / " + divisor + " = " + quotient);
         
