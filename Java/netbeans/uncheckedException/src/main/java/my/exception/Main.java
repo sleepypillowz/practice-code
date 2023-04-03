@@ -2,7 +2,7 @@ package my.exception;
 
 import java.util.*;
 
-public class Exception {
+public class Main {
 
     public static void main(String[] args) {
         
