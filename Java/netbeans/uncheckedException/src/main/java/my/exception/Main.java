@@ -9,7 +9,7 @@ public class Main {
         Scanner s = new Scanner(System.in);  
         int[] values = {5,10,15,20,25};
         int dividend, divisor, quotient;
-        
+               
         try{
             
         System.out.print("Enter dividend: ");
@@ -17,7 +17,7 @@ public class Main {
         
         System.out.print("Enter divisor: ");
         divisor = s.nextInt();
-         
+                     
         quotient = dividend/divisor;
         System.out.println(dividend + " / " + divisor + " = " + quotient);
         
