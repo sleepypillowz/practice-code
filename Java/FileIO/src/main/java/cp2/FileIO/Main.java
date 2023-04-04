@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) {
         
         //example 1
-        
+        /*
         Path filePath = Paths.get("C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\practice-code\\Java\\netbeans\\PathSample\\sample.txt");
         int count = filePath.getNameCount();
         System.out.println("Path is " + filePath.toString());
@@ -25,7 +25,7 @@ public class Main {
         for (int x = 0; x < count; ++x) {
             System.out.println("Element " + x + " is " + filePath.getName(x));
         }
-        
+        */
         //example 2 Absolute Path
         /*
         String fileName;
@@ -145,9 +145,9 @@ public class Main {
         */
         
         //example 9 BuffedWriter Methods
-        /*
+        
         Scanner input = new Scanner(System.in);
-        Path file = Paths.get("C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\practice-code\\Java\\netbeans\\PathSample\\grades.txt");
+        Path file = Paths.get("C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\practice-code\\Java\\FileIO\\grades.txt");
         String s = "";
         String delimiter = ",";
         long id;
@@ -178,6 +178,6 @@ public class Main {
         catch(Exception e) {
             System.out.println("Message: " + e);
         }
-        */
+        
     }
 }

@@ -1,1 +1,2 @@
-2008700,Jolibee Delivery,87.00
+8700,Jolibee,87.00
+1000,Delivery,78.00
