@@ -1,4 +1,4 @@
-package cp2.pathsample;
+package cp2.FileIO;
 
 import java.nio.file.*;
 import java.nio.file.attribute.*;
@@ -10,7 +10,7 @@ import static java.nio.file.AccessMode.*;
 import java.util.Scanner;
 import java.io.IOException;
 
-public class PathSample {
+public class Main {
 
     public static void main(String[] args) {
         
