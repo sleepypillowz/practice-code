@@ -20,30 +20,39 @@
 
 <body>
 
+	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-			  <li class="nav-item">
-				<a class="nav-link active" style="margin-left: 8em;" aria-current="page" href="#">Home</a>
-			  </li>
-			</ul>
-			<button type="button" class="btn btn-light nav-item bi bi-envelope" title="Messages"></button>
-			<button type="button" class="btn btn-light nav-item bi bi-bell" title="Notifications"></button>
-			<button type="button" class="btn btn-light nav-item bi bi-calendar3" title="Calendar"></button>
-			<button type="button" class="btn btn-light nav-item bi bi-question-square-fill" title="Help"></button>
-			<button type="button" class="btn btn-light nav-item bi bi-search" title="Search"></button>
-			<button type="button" class="btn btn-light nav-item" title="Profile">Lorem Ipsum</button>
-			<button type="button" class="btn btn-light nav-item bi bi-caret-down-fill" title="Dropdown-menu"></button>
-		  </div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				<button type="button" class="navbar-toggler btn btn-light nav-item bi bi-bell" title="Notifications"></button>
+				<button type="button" class="navbar-toggler btn btn-light nav-item bi bi-envelope" title="Messages"></button>			
+			</button>
+			<!-- Removes certain navbar when screen gets smaller -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" style="margin-left: 8em;" aria-current="page" href="#">Home</a>
+					</li>
+				</ul>
+				<button type="button" class="btn btn-light nav-item bi bi-envelope" title="Messages"></button>
+				<button type="button" class="btn btn-light nav-item bi bi-bell" title="Notifications"></button>
+				<button type="button" class="btn btn-light nav-item bi bi-calendar3" title="Calendar"></button>
+				<button type="button" class="btn btn-light nav-item bi bi-question-square-fill" title="Help"></button>
+				<button type="button" class="btn btn-light nav-item bi bi-search" title="Search"></button>
+				<button type="button" class="btn btn-light nav-item" title="Profile">Lorem Ipsum</button>
+				<button type="button" class="btn btn-light nav-item bi bi-caret-down-fill"
+					title="Dropdown-menu"></button>
+			</div>
 		</div>
-	  </nav>
+	</nav>
 
-	  <div style="width: 50em;">
-		<ul class="d-flex flex-column flex-shrink-0 p-3 text-white bg-secondary" id="sidebar" style="width: 125px; height: 5000px;">
+	<!-- Sidebar -->
+	<div style="width: 50em;">
+		<ul class="d-flex flex-column flex-shrink-0 p-3 text-white bg-secondary" id="sidebar"
+			style="width: 125px; height: 5000px;">
 			<li type="button" class="btn btn-secondary">STI Logo</li>
 			<li type="button" class="btn btn-secondary bi bi-house-door-fill"><br>Home</li>
 			<li type="button" class="btn btn-secondary bi bi-boxes"><br>Courses </li>
@@ -56,60 +65,69 @@
 		</ul>
 	</div>
 
-    <div class="container-xs" style="margin-left: 9.5em; width:56em;">        
+	<!-- Main Content Nav -->
+	<div class="container-xs" style="margin-left: 9.5em; width:56em;">
 		<div class="row" style="width: 20em;">
-				<a type="button" class="col-4 btn btn-light">Dashboard</a>
-				<a type="button" class="col-4 btn btn-light">News</a>
-				<a type="button" class="col-4 btn btn-light">Welcome</a>
-			</div>
-</div>		
-	
+			<a type="button" class="col-4 btn btn-light">Dashboard</a>
+			<a type="button" class="col-4 btn btn-light">News</a>
+			<a type="button" class="col-4 btn btn-light">Welcome</a>
+		</div>
+	</div>
 
+	<!-- Main Content -->
 	<section class="bg-light shadow-sm border border-1" style="margin-left: 9.5em; width:57em;">
 		<div class="container-xs">
-		  <div class="row">
-			<div class="container-xs" style="width:56em;">
-				<div class="row" style="width: 20em;">
-					<a type="button" class="col-4 btn btn-light">Courses</a>
-					<a type="button" class="col-4 btn btn-light">Enrolled</a>
-					<a type="button" class="col-4 btn btn-light">Completed</a>
+			<div class="row">
+				<div class="container-xs" style="width:56em;">
+					<div class="row" style="width: 20em;">
+						<a type="button" class="col-4 btn btn-light">Courses</a>
+						<a type="button" class="col-4 btn btn-light">Enrolled</a>
+						<a type="button" class="col-4 btn btn-light">Completed</a>
+					</div>
 				</div>
-			</div>
 
 
-			<!--ADD CLASSES HERE d-flex align-items-stretch-->
-			<div class="col-lg-4 mb-3 d-flex align-items-stretch">
-			  <div class="card">
-				<img src="https://i.postimg.cc/28PqLLQC/dotonburi-canal-osaka-japan-700.jpg" class="card-img-top" alt="Card Image">
-				<div class="card-body d-flex flex-column ">
-				  <h5 class="card-title">Computer Programming 2 - SY2223-2T</h5>
-				  <p class="card-text mb-4">Is a manmade waterway dug in the early 1600's and now displays many landmark commercial locals and vivid neon signs.</p>
+				<!--ADD CLASSES HERE d-flex align-items-stretch-->
+				<div class="col-lg-4 mb-3 d-flex align-items-stretch">
+					<div class="card">
+						<img src="https://i.postimg.cc/28PqLLQC/dotonburi-canal-osaka-japan-700.jpg"
+							class="card-img-top" alt="Card Image">
+						<div class="card-body d-flex flex-column ">
+							<h5 class="card-title">Computer Programming 2 - SY2223-2T</h5>
+							<p class="card-text mb-4">Is a manmade waterway dug in the early 1600's and now displays
+								many landmark commercial locals and vivid neon signs.</p>
+						</div>
+					</div>
 				</div>
-			  </div>
-			</div>
-			<!--ADD CLASSES HERE d-flex align-items-stretch-->
-			<div class="col-lg-4 mb-3 d-flex align-items-stretch">
-			  <div class="card">
-				<img src="https://i.postimg.cc/4xVY64PV/porto-timoni-double-beach-corfu-greece-700.jpg" class="card-img-top" alt="Card Image">
-				<div class="card-body d-flex flex-column">
-				  <h5 class="card-title">Computer Systems Architecture - SY2223-2T</h5>
-				  <p class="card-text mb-4">Near Afionas village, on the west coast of Corfu island. The two beaches form two unique bays. The turquoise color of the sea contrasts to the high green hills surrounding it.</p>
+				<!--ADD CLASSES HERE d-flex align-items-stretch-->
+				<div class="col-lg-4 mb-3 d-flex align-items-stretch">
+					<div class="card">
+						<img src="https://i.postimg.cc/4xVY64PV/porto-timoni-double-beach-corfu-greece-700.jpg"
+							class="card-img-top" alt="Card Image">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">Computer Systems Architecture - SY2223-2T</h5>
+							<p class="card-text mb-4">Near Afionas village, on the west coast of Corfu island. The two
+								beaches form two unique bays. The turquoise color of the sea contrasts to the high green
+								hills surrounding it.</p>
+						</div>
+					</div>
 				</div>
-			  </div>
-			</div>
-			<!--ADD CLASSES HERE d-flex align-items-stretch-->
-			<div class="col-lg-4 mb-3 d-flex align-items-stretch">
-			  <div class="card">
-				<img src="https://i.postimg.cc/TYyLPJWk/tritons-fountain-valletta-malta-700.jpg" class="card-img-top" alt="Card Image">
-				<div class="card-body d-flex flex-column">
-				  <h5 class="card-title">Discrete Structures 1 (Discrete Mathematics) - SY2223-2T</h5>
-				  <p class="card-text mb-4">Located just outside the City Gate of Valletta, Malta. It consists of three bronze Tritons holding up a large basin, balanced on a concentric base built out of concrete and clad in travertine slabs.</p>
+				<!--ADD CLASSES HERE d-flex align-items-stretch-->
+				<div class="col-lg-4 mb-3 d-flex align-items-stretch">
+					<div class="card">
+						<img src="https://i.postimg.cc/TYyLPJWk/tritons-fountain-valletta-malta-700.jpg"
+							class="card-img-top" alt="Card Image">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">Discrete Structures 1 (Discrete Mathematics) - SY2223-2T</h5>
+							<p class="card-text mb-4">Located just outside the City Gate of Valletta, Malta. It consists
+								of three bronze Tritons holding up a large basin, balanced on a concentric base built
+								out of concrete and clad in travertine slabs.</p>
+						</div>
+					</div>
 				</div>
-			  </div>
 			</div>
-		  </div>
 		</div>
-	  </section>
+	</section>
 
 
 	<!-- Latest compiled JavaScript -->
