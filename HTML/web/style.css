@@ -1,15 +1,11 @@
-* {
-	font-family: 'Roboto', sans-serif;
-	color: white;
-	list-style-type: none; /* Remove bullets */
+p, h5{
+	color: black;
 }
 
-/*element selector*/
-h1, p, li {
-	font-family: 'Montserrat', sans-serif;
-	color: white;
-}
+#sidebar {
 
-ul {
-  position: absolute;
+	margin-bottom: -5000px;
+	/* any large number will do */
+	padding-bottom: 5000px;
+
 }

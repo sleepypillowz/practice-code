@@ -1,0 +1,41 @@
+/* CSS Syntax
+
+--Selector--
+p,h1,h2 etc.
+--Decleration--
+color: property
+red: value
+
+*/
+/* p selector
+
+p {
+    text-align: center;
+    color: red;
+  }
+
+*/
+
+/* id selector
+
+#para1 {
+    text-align: center;
+    color: red;
+  }
+*/
+
+/* class selector 
+
+.para1 {
+    text-align: center;
+    color: red;
+  }
+*/
+
+/* Universal Selector
+
+* {
+    text-align: center;
+    color: red;    
+}
+*/
