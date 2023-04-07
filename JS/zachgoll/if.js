@@ -3,3 +3,5 @@ if ('some string' === 'another string') {
 }else {
     console.log('the string are not equal');
 }
+
+const myExpression = (20 === 20) && (50 === 50);
