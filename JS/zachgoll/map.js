@@ -7,3 +7,7 @@ function myCustomMapOperationCallback(itemFromArray) {
 const newArray = myArray.map(myCustomMapOperationCallback);
 
 newArray
+
+const strArray = ["Hello", "world", "my", "name", "is", "Zach"];
+
+strArray.map((itemFromArray) => itemFromArray[0])
