@@ -1,3 +1,4 @@
+
 p, h5{
 	color: black;
 }
@@ -9,3 +10,9 @@ p, h5{
 	padding-bottom: 5000px;
 
 }
+
+
+	.card img {
+	  width: 100%;
+	  height: auto;
+	}
