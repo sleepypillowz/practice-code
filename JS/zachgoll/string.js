@@ -1,0 +1,2 @@
+//toUpperCase, substring, trim, match
+
