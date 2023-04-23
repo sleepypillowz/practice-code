@@ -27,3 +27,9 @@ regex.test(string2)
 /[a-z ]/.exec(string1) //examine entire string
 /[a-z ]/{5}.exec(string1) //1st 5 characters
 /[a-z]/{2,6}.exec(string1) //1st 5 characters
+
+const regex2 = /[a-z]+/g
+
+const str = 'hello world, 2021 @ more of a string';
+/^[a-z ]+,[0-9 ]+@[a-z ]+$/.exec(str);
+/.+/.exec(str);

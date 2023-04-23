@@ -16,3 +16,7 @@ const string2 = 'my favorite thing to do is code';
 regex.test(string1);
 
 regex.test(string2);
+
+const regex2 = new RegExp2('favorite');
+
+regex2.test(string1)
