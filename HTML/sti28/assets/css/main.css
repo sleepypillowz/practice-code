@@ -1,0 +1,166 @@
+/*  body tag */
+body{
+	background-color:#FFFDD0;
+}
+
+/* Universal Selector in which it selects all elements */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+/* Profile onClick */
+.user-pic{
+	width: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-left: 1100px;
+}
+
+/* sub-menu starts here */
+
+/* Profile onClick Content */
+.sub-menu-wrap{
+	position: absolute;
+	top: 6%;
+	right: 0%;
+	width: 250px;
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.5s;
+	z-index: 1;
+}
+
+/* Profile onClick Wrapper */
+.sub-menu-wrap.open-menu{
+	max-height: 400px;
+}
+.sub-menu{
+	background: #fff;
+	padding: 70px;
+	margin: 10px;
+	height: 400px;
+}
+
+.sub-menu hr{
+	border: 0;
+	height: 1px;
+	width: 100%;
+	background: #ccc;
+	margin: 15px 0 10px;
+}
+.sub-menu-link{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #525252;
+	margin: 12px 0;
+}
+.sub-menu-link p{
+	width: 100%;
+}
+.sub-menu-link span{
+	font-size: 22px;
+	transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+	transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+	font-weight: 600;
+}
+/* sub-menu ends here */
+
+/* user info starts here */
+.user-info{
+	display: flex;
+	align-items: center;
+}
+.user-info h3{
+	font-weight: 500;
+}
+.user-info img{
+	width: 60px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+/* user info ends here */
+
+
+/* profileimg starts here */
+.profileimg {
+  border-radius: 50%;
+  width: 50px;
+  position:relative; right:50px;
+  opacity: 0.5;
+
+
+}
+.profileimg:hover {
+    cursor: pointer;
+    transition: .5s ease;
+    opacity: 1;
+ 
+}
+/* profileimg ends here */
+
+/* Header starts here */
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 5px 15px;
+    background-color:#89CFF0
+}
+
+    /* Style the header links */
+    .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 7px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+
+        /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        /* Change the background color on mouse-over 
+        
+        .header a:hover {
+            background-color: #7393B3
+            color: black;
+        }
+		*/
+		
+        /* Style the active/current link*/
+        .header a.active {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
+
+.header-center {
+    position: fixed;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -100px;
+}
+
+    .header-right {
+        float: none;
+    }
+}
+/*Header ends here  */
+

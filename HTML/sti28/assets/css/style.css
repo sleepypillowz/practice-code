@@ -1,0 +1,94 @@
+body { font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 300; color: #888; line-height: 30px; text-align: center; } /* sidebar content */
+
+strong { font-weight: 500; } /* no idea */
+
+a { color: #f35b3f; border-bottom: 1px dashed #f35b3f; text-decoration: none; transition: all .3s; } /* changes color teext on hover and underlines it */
+a:hover, a:focus { color: #36454F; border: 0; text-decoration: none; }
+
+img { max-width: 100%; } /* no idea */
+
+.medium-paragraph { font-size: 18px; line-height: 34px; } /* no idea */
+
+::-moz-selection { background: #f35b3f; color: #fff; text-shadow: none; } /* no idea */
+::selection { background: #f35b3f; color: #fff; text-shadow: none; }
+
+/***** Wrapper *****/
+
+.wrapper { display: block; }
+
+/***** places it on the Sidebar *****/
+
+.sidebar {
+	width: 250px; height: 100vh; position: fixed; top: 0; left: -255px; z-index: 999; 
+	background: #333; color: #fff; transition: all .3s; box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5);
+	text-align: left;
+}
+
+
+/* on click */
+.sidebar.active { left: 0; }
+
+.dismiss {
+	width: 35px; height: 35px; position: absolute; top: 10px; right: 10px; transition: all .3s; 
+	background: #444; border-radius: 4px; text-align: center; line-height: 35px; cursor: pointer;
+}
+
+.dismiss:hover, .dismiss:focus { background: #555; color: #fff; } /* no idea */
+
+.sidebar .logo { padding: 40px 20px; border-bottom: 1px solid #444; transition: all .3s; } /* no idea */
+
+/* sidebar logo  */
+.sidebar .logo a {
+	display: inline-block;
+	width: 172px;
+	height: 34px;
+	background: url(../img/logo.png) left top no-repeat;
+	border: 0;
+	text-indent: -999999px;
+}
+
+.sidebar ul.menu-elements { padding: 10px 0; border-bottom: 1px solid #444; transition: all .3s; } /* no idea */
+
+/* sets text to white and adds spacing */
+.sidebar ul li a {
+	display: block; padding: 10px 20px;
+	border: 0; color: #fff;
+}
+
+/* no idea */
+.sidebar ul li a:hover,
+.sidebar ul li a:focus,
+.sidebar ul li.active > a:hover,
+.sidebar ul li.active > a:focus { outline: 0; background: #555; color: #fff; }
+
+/* no idea */
+.sidebar ul li a i { margin-right: 5px; }
+
+.sidebar ul li.active > a, a[aria-expanded="true"] {
+	background: #444;
+	color: #fff;
+}
+
+
+/* no idea */
+.sidebar ul ul a { background: #444; padding-left: 30px; font-size: 14px; }
+
+.sidebar ul ul li.active > a { background: #555; }
+
+.sidebar a[data-toggle="collapse"] {
+    position: relative;
+}
+
+/* no idea */
+.sidebar .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.sidebar .to-top { padding: 20px; text-align: center; } /* aligns top button to center */
+
+.sidebar .dark-light-buttons { padding: 10px 20px 30px 20px; text-align: center; } /* no idea */
+
