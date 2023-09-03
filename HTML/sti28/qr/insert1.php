@@ -1,5 +1,6 @@
 <!-- connect to database -->
 <?php
+/*
     include('../db.php');
     
     //to insert
@@ -36,4 +37,5 @@
     header("location: index.php");  	
 
     $conn->close();
+*/
 ?>

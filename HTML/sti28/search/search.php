@@ -1,6 +1,10 @@
 <?php 
 
+/*
+
 session_start();
+
+*/
 
 ?>
 

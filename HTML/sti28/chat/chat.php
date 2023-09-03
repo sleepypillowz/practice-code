@@ -1,4 +1,5 @@
 <?php 
+/*
 session_start();
 include ("../realtimelocatordb/connect.php");
 include("../realtimelocatordb/links.php");
@@ -13,7 +14,7 @@ if (isset($_GET["userId"]))
 $users = mysqli_query ($connect, "SELECT * FROM users WHERE Id = ' ".$_SESSION ["userId"]."' ")
 or die ("Failed to query database" . mysql_error());
 $user = mysqli_fetch_assoc($users);
-
+*/
 ?>
 <!DOCTYPE html>
 <html lang="en">

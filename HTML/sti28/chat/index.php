@@ -1,4 +1,5 @@
 	<?php 
+    /*
 	session_start();
 	include ("connect.php");
 	include("links.php");
@@ -13,6 +14,7 @@
 	$users = mysqli_query ($connect, "SELECT * FROM users WHERE Id = ' ".$_SESSION ["userId"]."' ")
 	or die ("Failed to query database" . mysql_error());
 	$user = mysqli_fetch_assoc($users);
+    */
 
 ?>
 	?>

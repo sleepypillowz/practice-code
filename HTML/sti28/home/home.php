@@ -1,21 +1,9 @@
-<?php
-include('../assets/php/db.php');
-
-if(!isset($_SESSION['IS_LOGIN'])){
-	header('location:../login/login.php');
-	die();
-}
-?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!--Title at the top left--> 
-    <title>Home</title>
-
-    <!--I have no idea--> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--links to External CSS--> 
+    <title>Home</title>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,28 +11,26 @@ if(!isset($_SESSION['IS_LOGIN'])){
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
-    <!--JQuery Script to import header.html--> 
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
-    </script>
-
-    <!--Load Script-->
-    <script> 
-        $(function(){
-        $("#header").load("../header.php"); 
-    });
-    </script>  
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
-
 <body>
-<!--imported header-->
-<div id="header"></div>
+    <?php
+    /*
+    include('../assets/php/db.php');
+    
+    if (!isset($_SESSION['IS_LOGIN'])) {
+        header('location: ../login/login.php');
+        die();
+    }
+    */
+    ?>
 
-<!--start body-->
-<div class="card-grid">
+    <!-- Import header -->
+    <div id="header"></div>
+
+    <!-- Start body -->
+    <div class="card-grid">
+        <!-- Card 1 -->
         <div class="card">
             <div class="card-header">123 Main St</div>
             <div class="card-body">
@@ -56,6 +42,8 @@ if(!isset($_SESSION['IS_LOGIN'])){
                 <button class="btn btn-outline">Contact Seller</button>
             </div>
         </div>
+
+        <!-- Card 2 -->
         <div class="card card-shadow">
             <div class="card-header">123 Main St</div>
             <div class="card-body">
@@ -67,9 +55,11 @@ if(!isset($_SESSION['IS_LOGIN'])){
                 <button class="btn btn-outline">Contact Seller</button>
             </div>
         </div>
+
+        <!-- Card 3 -->
         <div class="card card-shadow">
             <div class="card-header card-image">
-                <img src="https://source.unsplash.com/TiVPTYCG_3E" />
+                <img src="https://source.unsplash.com/TiVPTYCG_3E" alt="Card Image">
             </div>
             <div class="card-body">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque facilis rerum corporis iusto odio
@@ -81,9 +71,13 @@ if(!isset($_SESSION['IS_LOGIN'])){
             </div>
         </div>
     </div>
-<!--end body-->
-</body>
+    <!-- End body -->
 
+    <!-- Your scripts here (if needed) -->
+    <script>
+        $(function(){
+            $("#header").load("../header.php");
+        });
+    </script>
 </body>
 </html>
-

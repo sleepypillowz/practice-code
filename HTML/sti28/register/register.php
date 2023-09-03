@@ -1,10 +1,13 @@
 
 <?php
+/*
 include('../db.php');
 if(isset($_SESSION['IS_LOGIN'])){
   header('location:../login/login.php');
   die();
+
 }
+
 if(isset($_POST['submit'])){
   $username=$_POST['username'];
   $password=$_POST['password'];
@@ -17,6 +20,7 @@ if(isset($_POST['submit'])){
     echo "Thank you";
   }
 }
+*/
 ?>
 
 <!DOCTYPE html>

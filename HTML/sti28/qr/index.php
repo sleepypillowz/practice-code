@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<?php //session_start() ?>
+<?php 
+// session_start() 
+?>
 <html>
 <head>
 	<!-- we used js and css for scanner -->
