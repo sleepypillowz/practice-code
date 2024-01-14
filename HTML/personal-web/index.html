@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acojido | Personal Web</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  <!-- HTML element to display the loading animation -->
+  <div id="loader">
+    <div class="loader">
+      <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+  </div>
+  <header>
+    <div class="header-content">
+      <h1>Alexander Acojido</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#certificates">Certificates</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="images/profile.png" alt="Hero Image">
+        </div>
+        <h1>Alexander Acojido</h1>
+        <h2>Aspiring Software Engineer</h2>
+        <div class="social-links">
+          <button class="social-button github"
+            onclick="window.open('https://github.com/sleepypillowz', '_blank')"></button>
+          <button class="social-button leetcode"
+            onclick="window.open('https://leetcode.com/sleepypillowz/', '_blank')"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="standardized-about">
+      <h2>About</h2>
+      <div class="about-content">
+        <p>
+          Welcome to my website I'm Alexander Acojido, and I'm thrilled to have you here on my 
+          personal website. This virtual space is a reflection of who I am, what I love, and 
+          what I strive to achieve in life. Growing up, I was always curious about the world 
+          around me. This curiosity ignited a passion for learning, and I've been on an exciting 
+          quest for knowledge ever since.
+        </p>
+      </div>
+    </section>
+
+
+    <section id="services" class="portfolio">
+      <h2>Services</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <h3>Website Development</h3>
+          <p>I'll design a static website.</p>
+        </div>
+      <!--
+        <div class="portfolio-card">
+          <h3>Responsive Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="portfolio-card">
+          <h3>Front-end Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="portfolio-card">
+          <h3>Figma Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      -->
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li class="skill-item">
+          <span class="skill-item-title">HTML5</span>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 80%;"></div>
+          </div>
+        </li>
+        <li class="skill-item">
+          <span class="skill-item-title">SQL</span>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 60%;"></div>
+          </div>
+        </li>
+        <li class="skill-item">
+          <span class="skill-item-title">CSS</span>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 30%;"></div>
+          </div>
+        </li>
+        <li class="skill-item">
+          <span class="skill-item-title">JS</span>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 25%;"></div>
+          </div>
+        </li>
+        <li class="skill-item">
+          <span class="skill-item-title">Python</span>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 25%;"></div>
+          </div>
+        </li>
+        <li class="skill-item">
+          <span class="skill-item-title">C</span>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 20%;"></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <a href="https://github.com/sleepypillowz/little-profile-details" target="_blank">
+            <img src="images/project1.png" alt="Project 1">
+          </a>
+          <h3>little profile details</h3>
+          <p>A simple Front Page for a personal website.</p>
+        </div>
+        <div class="portfolio-card">
+          <a href="images/project2.png">
+            <img src="images/project2.png" alt="Project 2">
+          </a>
+          <h3>Coach Locator</h3>
+          <p>QR based which contains a local database.</p>
+        </div>
+        <div class="portfolio-card">
+          <a href="https://github.com/sleepypillowz/Maxxe-shop" target="_blank">
+            <img src="images/project3.png" alt="Project 3">
+          </a>
+          <h3>Maxxe Shop</h3>
+          <p> A Website for buying lipsticks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-card">
+        <h3>STI College Munoz Edsa</h3>
+        <p>2nd year College | 2022-present | BSCS</p>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <div class="certificate-grid">
+        <div class="certificate-card">
+          <a href="images/certificate1.jpg">
+            <img src="images/certificate1.jpg" alt="Certificate 1">
+          </a>
+          <div class="certificate-content">
+            <h3>StackLeague</h3>
+            <p>Tips and Techniques for Software Developers</p>
+            <p>April 27, 2023</p>
+          </div>
+        </div>
+        <div class="certificate-card">
+          <a href="images/certificate2.jpg">
+            <img src="images/certificate2.jpg" alt="Certificate 2">
+          </a>
+          <div class="certificate-content">
+            <h3>SoloLearn</h3>
+            <p>Introduction to HTML</p>
+            <p>April 9, 2023</p>
+          </div>
+        </div>
+        <div class="certificate-card">
+          <a href="images/certificate3.jpg">
+            <img src="images/certificate3.jpg" alt="Certificate 3">
+          </a>
+          <div class="certificate-content">
+            <h3>ZUITT</h3>
+            <p>Basic Web Developement Workshop</p>
+            <p>March 11, 2023</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="styled-contact">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p>If you have any inquiries or would like to work together, feel free to reach out to me:</p>
+        <ul>
+          <li><strong>Email:</strong> alexacojido@gmail.com</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Alexander Acojido. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
