@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+  @apply font-bold border border-transparent rounded p-3 mx-14 my-4 bg-neutral-700
+}
