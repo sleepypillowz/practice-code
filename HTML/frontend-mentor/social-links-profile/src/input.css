@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .btn{
-  @apply font-bold border border-transparent rounded p-3 mx-14 my-4 bg-neutral-700
+  @apply font-semibold border border-transparent rounded-lg p-3 mx-16 my-5 bg-grey cursor-pointer 
+  hover:scale-105 ease-in-out duration-300 hover:text-black hover:bg-lime-600 active:bg-lime-700 focus:outline-none 
+  focus:ring focus:ring-lime-300;
+
 }
