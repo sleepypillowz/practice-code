@@ -550,9 +550,9 @@ video {
   grid-column-start: 2;
 }
 
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .mx-auto{
@@ -563,11 +563,6 @@ video {
 .my-24{
   margin-top: 6rem;
   margin-bottom: 6rem;
-}
-
-.mx-6{
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .h-full{
@@ -684,33 +679,13 @@ video {
   background-color: hsl(0 0% 20% / var(--tw-bg-opacity));
   padding: 0.75rem;
   font-weight: 600;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover{
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity: 1;
   background-color: rgb(101 163 13 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.btn:focus{
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(190 242 100 / var(--tw-ring-opacity));
-}
-
-.btn:active{
-  --tw-bg-opacity: 1;
-  background-color: rgb(77 124 15 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px){
@@ -722,3 +697,4 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+

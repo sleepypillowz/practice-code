@@ -6,7 +6,6 @@
 
 .btn{
   @apply font-semibold border border-transparent rounded-lg p-3 mx-16 my-5 bg-grey cursor-pointer 
-  hover:scale-105 ease-in-out duration-300 hover:text-black hover:bg-lime-600 active:bg-lime-700 focus:outline-none 
-  focus:ring focus:ring-lime-300;
-
+  hover:text-black hover:bg-lime-600;
 }
+

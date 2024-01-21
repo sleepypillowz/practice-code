@@ -16,9 +16,9 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
+
+This is my 1st project in FrontEnd Mentor using HTML & Tailwind.
 
 ### The challenge
 
@@ -26,85 +26,62 @@ Users should be able to:
 
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
+### Screenshot
+
+![](./screenshot.png)
+
 ## My process
+
+  1. Before taking on the challenge, I established my foundational knowledge in Tailwind.
+  2. I began coding the semantics for HTML, focusing on structuring the document.
+  3. I implemented tailwind commenting some html so I can focus on designing one html at a time.
+  4. The design process involved implementing familiar Tailwind classes and referring to the documentation for unfamiliar ones.
+  5. When opportunities arose to reduce code, such as in default styles for the body and btn class, I took advantage of them.
+  6. Later in the process, I discovered a style guide and incorporated its principles to ensure consistency and best practices in my design.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Tailwind](https://tailwindcss.com/) - CSS framework
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- The proper usage of divs and main to seperate related elements and style them much more conviently using tailwind.
 
-To see how you can add code snippets, see below:
+- The customization in tailwind.config.js for specific colors and font family.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+- The centering of the main content using grid columns.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+- The benefits of using mobile first approach.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- The process of working with a given template and a set of standards to follow.
+
+- Making an image round using a container.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I'd like to continue using the tailwind framework as there's much I've yet to try.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Tailwind CSS Tutorial](https://www.youtube.com/watch?v=bxmDnn7lrnk&list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw) - This playlist allowed me to build my fundamentals in Tailwind.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Tailwind](https://tailwindcss.com/) - This helped me refer to unfamiliar concepts and resources I may be able to use.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [alexacojido](https://alexacojido.netlify.app/)
+- Frontend Mentor - [@sleepypillowz](https://www.frontendmentor.io/profile/sleepypillowz)
+- Github - [sleepypillowz](https://github.com/sleepypillowz)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Big thanks to Net Ninja for helping me build my fundamentals in tailwind and the tailwind team itself for a good framework and documentation of their work.
