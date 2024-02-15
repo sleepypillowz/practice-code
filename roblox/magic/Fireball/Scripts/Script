@@ -1,50 +1,65 @@
-local fireball  = game:GetService("ReplicatedStorage").Magic.Fireball
+-- This script listens for the 'Fire' event from the client and handles the logic for casting fireball magic.
+
+-- References to different magic assets in ReplicatedStorage
+local fireball = game:GetService("ReplicatedStorage").Magic.Fireball
 local ball = game:GetService("ReplicatedStorage").Magic.Ball
 local swirl = game:GetService("ReplicatedStorage").Magic.SwirlShockwaveFire
 local ground = game:GetService("ReplicatedStorage").Magic.DestroyedGround
 
+-- Tweening service and tween info for animations
 local TweenService = game:GetService("TweenService")
-local tweenInfo1 = TweenInfo.new(0.5,Enum.EasingStyle.Back,Enum.EasingDirection.InOut, 0,false,0)
-local tweenInfo2 = TweenInfo.new(2,Enum.EasingStyle.Back,Enum.EasingDirection.InOut, 0,false,0)
+local tweenInfo1 = TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.InOut, 0, false, 0)
+local tweenInfo2 = TweenInfo.new(2, Enum.EasingStyle.Back, Enum.EasingDirection.InOut, 0, false, 0)
 
+-- References to remote event and tool
 local remote = script.Parent.Parent.Events.Fire
 local tool = script.Parent.Parent
+
+-- Constants for jump height and walk speed
 local JP = 7.2
 local WS = 16
 
 local TouchedConnection
 
-
+-- Listening for the 'Fire' event from the client
 remote.OnServerEvent:Connect(function(plr)
+	-- References to the player's character's HumanoidRootPart and Right Arm
 	local HRP = plr.Character.HumanoidRootPart
 	local Glow1 = game.ReplicatedStorage.Magic.YellowGlow.Glow:Clone()
 
+	-- Placing a glowing effect on the player's right arm
 	Glow1.Parent = plr.Character["Right Arm"]
 	Glow1.Position = plr.Character["Right Arm"].RightGripAttachment.Position
 
+	-- Setting player's jump height and walk speed to zero temporarily
 	HRP.Parent.Humanoid.JumpHeight = 0
 	HRP.Parent.Humanoid.WalkSpeed = 0
-	
+
+	-- Waiting for 0.5 seconds before shaking the camera and spawning a fireball
 	wait(0.5)
 	remote.Parent.ShakeCamera:FireClient(plr)
 	local fireballClone = fireball:Clone()
 	fireballClone.Parent = game.Workspace
 	fireballClone.Position = plr.Character.HumanoidRootPart.Position
 	fireballClone.Rotation = plr.Character.HumanoidRootPart.Rotation
-	
+
+	-- Destroying the fireball after 10 seconds and removing the glowing effect
 	game.Debris:AddItem(fireballClone, 10)
 	Glow1:Destroy()
-	fireballClone.BodyVelocity.Velocity = (plr.Character.HumanoidRootPart.CFrame.LookVector*100)
+	fireballClone.BodyVelocity.Velocity = (plr.Character.HumanoidRootPart.CFrame.LookVector * 100)
 
+	-- Connecting to the Touched event of the fireball clone
 	TouchedConnection = fireballClone.Touched:Connect(function(hit)
 		if hit.Parent:FindFirstChild("Humanoid") then
 			if hit.Parent.Name ~= plr.Name then
+				-- Shaking the camera, playing explosion sound, and damaging the hit humanoid
 				remote.Parent.ShakeCamera:FireClient(plr)
 				script.Parent.Parent.Assets.Explosion:Play()
 				hit.Parent.Humanoid:TakeDamage(script.Parent.Parent.Damage.Value)
+
+				-- Creating highlight effect, applying knockback, and spawning magic effects
 				local hl = Instance.new("Highlight")
 				hl.Parent = hit.Parent
-				
 				game.Debris:AddItem(hl, 1)
 
 				local kb = Instance.new("BodyVelocity")
@@ -53,26 +68,29 @@ remote.OnServerEvent:Connect(function(plr)
 				local groundClone = ground:Clone()
 
 				kb.P = math.huge
-				kb.MaxForce = Vector3.new(math.huge,math.huge,math.huge)
+				kb.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
 				kb.Velocity = fireballClone.CFrame.LookVector * 30
 				kb.Parent = hit.Parent.Torso
-				
+
+				-- Positioning magic effects and setting their destinations
 				groundClone.Parent = game.Workspace
 				ballClone.Parent = game.Workspace
 				swirlClone.Parent = game.Workspace
 				ballClone.Position = hit.Parent.Torso.Position
 				swirlClone.Position = hit.Parent.Torso.Position
-				groundClone.Position = Vector3.new(hit.Parent.Torso.Position.X, hit.Parent.Torso.Position.Y -  5.5, hit.Parent.Torso.Position.Z)
+				groundClone.Position = Vector3.new(hit.Parent.Torso.Position.X, hit.Parent.Torso.Position.Y - 5.5, hit.Parent.Torso.Position.Z)
 
 				local destination1 = Vector3.new(hit.Parent.Torso.Position.X, hit.Parent.Torso.Position.Y - 3.5, hit.Parent.Torso.Position.Z)
 				local destination2 = Vector3.new(hit.Parent.Torso.Position.X, hit.Parent.Torso.Position.Y - 6.5, hit.Parent.Torso.Position.Z)
 
-				local Settings1 = {Position = destination1}
-				local Tween1 = TweenService:Create(groundClone,tweenInfo1,Settings1)
-				
-				local Settings2 = {Position = destination2}
-				local Tween2 = TweenService:Create(groundClone,tweenInfo2,Settings2)
+				-- Tweening the ground effect to simulate destruction
+				local Settings1 = { Position = destination1 }
+				local Tween1 = TweenService:Create(groundClone, tweenInfo1, Settings1)
 
+				local Settings2 = { Position = destination2 }
+				local Tween2 = TweenService:Create(groundClone, tweenInfo2, Settings2)
+
+				-- Destroying temporary objects and starting tween animations
 				game.Debris:AddItem(kb, 0.5)
 				fireballClone:Destroy()
 				TouchedConnection:Disconnect()
@@ -80,12 +98,11 @@ remote.OnServerEvent:Connect(function(plr)
 				wait(5)
 				Tween2:Play()
 				groundClone:Destroy()
-
 			end
 		end
-		end)
+	end)
 
+	-- Restoring player's jump height and walk speed
 	HRP.Parent.Humanoid.JumpHeight = JP
 	HRP.Parent.Humanoid.WalkSpeed = WS
-
-	end)
+end)

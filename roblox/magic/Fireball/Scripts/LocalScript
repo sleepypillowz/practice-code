@@ -1,43 +1,54 @@
+-- Getting reference to the local player and mouse
 local plr = game.Players.LocalPlayer
 local mouse = plr:GetMouse()
-local fireball  = game:GetService("ReplicatedStorage").Magic.Fireball
+
+-- Getting references to various game assets and components
+local fireball = game:GetService("ReplicatedStorage").Magic.Fireball
 local remote = script.Parent.Parent.Events.Fire
 local tool = script.Parent.Parent
 local anims = script.Parent.Parent:WaitForChild("Animations")
 local assets = script.Parent.Parent.Assets
+
+-- Cooldown variable to prevent rapid activation
 local CD = true
 
-
+-- Connecting tool activation event
 tool.Activated:Connect(function()
+	-- Checking if cooldown is active
 	if CD == true then
+		-- Setting cooldown to false and triggering the remote event on the server
 		CD = false
 		remote:FireServer(plr)
 
+		-- Playing shooting animation and sound effect
 		local ShootTrack = plr.Character.Humanoid:LoadAnimation(anims.Shoot)
 		ShootTrack:Play()
 		wait()
 		assets.Fire:Play()
-		
+
+		-- Waiting for the specified cooldown duration before resetting the cooldown
 		wait(script.Parent.Parent.Cooldown.Value)
 		CD = true
-
 	end
 end)
 
+-- Connecting camera shake event on the client side
 remote.Parent.ShakeCamera.OnClientEvent:Connect(function()
-
+	-- Recording the start time of the camera shake
 	local StartTime = tick()
+	-- Looping until the shake duration is reached
 	repeat
 		wait()
 		local EndTime = tick()
 
+		-- Generating random offsets to shake the camera
 		local xOffset = math.random(-100,100) / 500
 		local yOffset = math.random(-100,100) / 500
 		local zOffset = math.random(-100,100) / 500
 
+		-- Applying the offsets to the player's camera
 		plr.Character.Humanoid.CameraOffset = Vector3.new(xOffset, yOffset, zOffset)
-
 	until EndTime - StartTime >= 0.5
+	-- Resetting the camera offset after the shake duration
 	plr.Character.Humanoid.CameraOffset = Vector3.new(0,0,0)
 end)
-
