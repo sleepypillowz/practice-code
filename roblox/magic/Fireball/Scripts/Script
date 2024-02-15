@@ -1,0 +1,91 @@
+local fireball  = game:GetService("ReplicatedStorage").Magic.Fireball
+local ball = game:GetService("ReplicatedStorage").Magic.Ball
+local swirl = game:GetService("ReplicatedStorage").Magic.SwirlShockwaveFire
+local ground = game:GetService("ReplicatedStorage").Magic.DestroyedGround
+
+local TweenService = game:GetService("TweenService")
+local tweenInfo1 = TweenInfo.new(0.5,Enum.EasingStyle.Back,Enum.EasingDirection.InOut, 0,false,0)
+local tweenInfo2 = TweenInfo.new(2,Enum.EasingStyle.Back,Enum.EasingDirection.InOut, 0,false,0)
+
+local remote = script.Parent.Parent.Events.Fire
+local tool = script.Parent.Parent
+local JP = 7.2
+local WS = 16
+
+local TouchedConnection
+
+
+remote.OnServerEvent:Connect(function(plr)
+	local HRP = plr.Character.HumanoidRootPart
+	local Glow1 = game.ReplicatedStorage.Magic.YellowGlow.Glow:Clone()
+
+	Glow1.Parent = plr.Character["Right Arm"]
+	Glow1.Position = plr.Character["Right Arm"].RightGripAttachment.Position
+
+	HRP.Parent.Humanoid.JumpHeight = 0
+	HRP.Parent.Humanoid.WalkSpeed = 0
+	
+	wait(0.5)
+	remote.Parent.ShakeCamera:FireClient(plr)
+	local fireballClone = fireball:Clone()
+	fireballClone.Parent = game.Workspace
+	fireballClone.Position = plr.Character.HumanoidRootPart.Position
+	fireballClone.Rotation = plr.Character.HumanoidRootPart.Rotation
+	
+	game.Debris:AddItem(fireballClone, 10)
+	Glow1:Destroy()
+	fireballClone.BodyVelocity.Velocity = (plr.Character.HumanoidRootPart.CFrame.LookVector*100)
+
+	TouchedConnection = fireballClone.Touched:Connect(function(hit)
+		if hit.Parent:FindFirstChild("Humanoid") then
+			if hit.Parent.Name ~= plr.Name then
+				remote.Parent.ShakeCamera:FireClient(plr)
+				script.Parent.Parent.Assets.Explosion:Play()
+				hit.Parent.Humanoid:TakeDamage(script.Parent.Parent.Damage.Value)
+				local hl = Instance.new("Highlight")
+				hl.Parent = hit.Parent
+				
+				game.Debris:AddItem(hl, 1)
+
+				local kb = Instance.new("BodyVelocity")
+				local ballClone = ball:Clone()
+				local swirlClone = swirl:Clone()
+				local groundClone = ground:Clone()
+
+				kb.P = math.huge
+				kb.MaxForce = Vector3.new(math.huge,math.huge,math.huge)
+				kb.Velocity = fireballClone.CFrame.LookVector * 30
+				kb.Parent = hit.Parent.Torso
+				
+				groundClone.Parent = game.Workspace
+				ballClone.Parent = game.Workspace
+				swirlClone.Parent = game.Workspace
+				ballClone.Position = hit.Parent.Torso.Position
+				swirlClone.Position = hit.Parent.Torso.Position
+				groundClone.Position = Vector3.new(hit.Parent.Torso.Position.X, hit.Parent.Torso.Position.Y -  5.5, hit.Parent.Torso.Position.Z)
+
+				local destination1 = Vector3.new(hit.Parent.Torso.Position.X, hit.Parent.Torso.Position.Y - 3.5, hit.Parent.Torso.Position.Z)
+				local destination2 = Vector3.new(hit.Parent.Torso.Position.X, hit.Parent.Torso.Position.Y - 6.5, hit.Parent.Torso.Position.Z)
+
+				local Settings1 = {Position = destination1}
+				local Tween1 = TweenService:Create(groundClone,tweenInfo1,Settings1)
+				
+				local Settings2 = {Position = destination2}
+				local Tween2 = TweenService:Create(groundClone,tweenInfo2,Settings2)
+
+				game.Debris:AddItem(kb, 0.5)
+				fireballClone:Destroy()
+				TouchedConnection:Disconnect()
+				Tween1:Play()
+				wait(5)
+				Tween2:Play()
+				groundClone:Destroy()
+
+			end
+		end
+		end)
+
+	HRP.Parent.Humanoid.JumpHeight = JP
+	HRP.Parent.Humanoid.WalkSpeed = WS
+
+	end)
