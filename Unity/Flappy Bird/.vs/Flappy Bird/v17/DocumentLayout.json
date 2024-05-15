@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sleepypillow\\Flappy Bird\\",
+  "WorkspaceRootPath": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|c:\\users\\sleepypillow\\flappy bird\\assets\\pipemovescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|c:\\users\\sleepypillow\\documents\\github\\practice-code\\unity\\flappy bird\\assets\\pipemovescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|solutionrelative:assets\\pipemovescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|c:\\users\\sleepypillow\\flappy bird\\assets\\birdscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\assets\\pipespawnscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|solutionrelative:assets\\pipespawnscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\assets\\birdscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|solutionrelative:assets\\birdscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,33 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PipeSpawnScript.cs",
+              "DocumentMoniker": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\PipeSpawnScript.cs",
+              "RelativeDocumentMoniker": "Assets\\PipeSpawnScript.cs",
+              "ToolTip": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\PipeSpawnScript.cs",
+              "RelativeToolTip": "Assets\\PipeSpawnScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T06:41:41.975Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PipeMoveScript.cs",
-              "DocumentMoniker": "C:\\Users\\sleepypillow\\Flappy Bird\\Assets\\PipeMoveScript.cs",
+              "DocumentMoniker": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\PipeMoveScript.cs",
               "RelativeDocumentMoniker": "Assets\\PipeMoveScript.cs",
-              "ToolTip": "C:\\Users\\sleepypillow\\Flappy Bird\\Assets\\PipeMoveScript.cs",
+              "ToolTip": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\PipeMoveScript.cs",
               "RelativeToolTip": "Assets\\PipeMoveScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T16:05:44.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BirdScript.cs",
-              "DocumentMoniker": "C:\\Users\\sleepypillow\\Flappy Bird\\Assets\\BirdScript.cs",
+              "DocumentMoniker": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\BirdScript.cs",
               "RelativeDocumentMoniker": "Assets\\BirdScript.cs",
-              "ToolTip": "C:\\Users\\sleepypillow\\Flappy Bird\\Assets\\BirdScript.cs",
+              "ToolTip": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\BirdScript.cs",
               "RelativeToolTip": "Assets\\BirdScript.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:15:06.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T15:15:06.582Z"
             }
           ]
         }
