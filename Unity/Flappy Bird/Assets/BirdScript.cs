@@ -9,6 +9,8 @@ public class BirdScript : MonoBehaviour
     public float flapStrength;
     public LogicScript logic;
     public bool birdIsAlive = true;
+    public float screenMaxY = 16;
+    public float screenMinY = -16;
 
     // Start is called before the first frame update
     void Start()    
@@ -22,19 +24,22 @@ public class BirdScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && birdIsAlive) 
         {
+            Debug.Log("player pressed space");
             myRigidbody.velocity = Vector2.up * flapStrength;
         }
 
-        if (transform.position.y < -16 || transform.position.y > 16)
+        if (transform.position.y < screenMinY || transform.position.y > screenMaxY)
         {
-            logic.gameOver();
+            Debug.Log("player went out of bounds");
+            logic.GameOver();
             birdIsAlive = false;
             Destroy(gameObject);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        logic.gameOver();
+        Debug.Log("player hit the pipes");
+        logic.GameOver();
         birdIsAlive = false;
         Destroy(gameObject);
   

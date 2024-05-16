@@ -12,7 +12,7 @@ public class PipeSpawnScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawnPipe();
+        SpawnPipe();
     }
 
     // Update is called once per frame
@@ -24,12 +24,12 @@ public class PipeSpawnScript : MonoBehaviour
         }
         else
         {
-            spawnPipe();
+            SpawnPipe();
             timer = 0;
         }
 
     }
-    void spawnPipe()
+    void SpawnPipe()
     {
         BirdScript birdScript = FindObjectOfType<BirdScript>();
 

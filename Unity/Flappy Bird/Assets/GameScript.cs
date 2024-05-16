@@ -10,27 +10,33 @@ public class LogicScript : MonoBehaviour
     public Text scoreText;
     public GameObject gameOverScreen;
     public AudioSource dingSFX;
+    public AudioSource BGM;
 
     [ContextMenu("Increase Score")]
-    public void addScore(int scoretoAdd)
+    public void AddScore(int scoretoAdd)
     {
         playerScore += scoretoAdd;
         scoreText.text = playerScore.ToString();
         dingSFX.Play();
     }
 
-    public void restartGame()
+    public void RestartGame()
     {
+        Debug.Log("clicked restart");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void gameOver()
+    public void GameOver()
     {
+        Debug.Log("Game Over");
         gameOverScreen.SetActive(true);
+        BGM.Stop();
+
     }
 
     public void QuitGame()
     {
+        Debug.Log("cliked quit");
         Application.Quit();
     }
 }
