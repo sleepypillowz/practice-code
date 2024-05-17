@@ -26,7 +26,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space) && birdIsAlive) 
+        if (Input.GetKeyDown(KeyCode.Space) && birdIsAlive)
         {
             // Debug.Log("player pressed space");
             myRigidbody.velocity = Vector2.up * flapStrength;

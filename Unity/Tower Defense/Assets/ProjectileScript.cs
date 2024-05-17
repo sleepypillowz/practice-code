@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float speed = 20f;
+    public float speed = 20;
     public float deadZone = 10;
 
     private void Update()
@@ -20,4 +20,5 @@ public class Projectile : MonoBehaviour
         }
 
     }
+
 }
