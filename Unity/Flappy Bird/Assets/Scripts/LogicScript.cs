@@ -19,7 +19,6 @@ public class LogicScript : MonoBehaviour
     public UnityEvent onPlayerPassedThroughPipe;
     public PlayerEvent onPlayerDied;
 
-
     void Start()
     {
         // Initialize the UnityEvent if it's not already assigned
