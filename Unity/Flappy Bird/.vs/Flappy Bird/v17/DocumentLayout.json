@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\assets\\gamescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|solutionrelative:assets\\gamescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\assets\\startscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|solutionrelative:assets\\startscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\assets\\pipemiddlescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|solutionrelative:assets\\pipemiddlescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\assets\\pipespawnscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|solutionrelative:assets\\pipespawnscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\assets\\pipemovescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|solutionrelative:assets\\pipemovescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\assets\\birdscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|solutionrelative:assets\\birdscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|c:\\users\\sleepypillow\\documents\\github\\practice-code\\unity\\flappy bird\\assets\\scripts\\pipespawnscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{071E10C7-98A1-E18C-E3D1-1B0603687006}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pipespawnscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,75 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GameScript.cs",
-              "DocumentMoniker": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\GameScript.cs",
-              "RelativeDocumentMoniker": "Assets\\GameScript.cs",
-              "ToolTip": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\GameScript.cs",
-              "RelativeToolTip": "Assets\\GameScript.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwA8AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T08:18:24.363Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StartScript.cs",
-              "DocumentMoniker": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\StartScript.cs",
-              "RelativeDocumentMoniker": "Assets\\StartScript.cs",
-              "ToolTip": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\StartScript.cs",
-              "RelativeToolTip": "Assets\\StartScript.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T07:39:43.172Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PipeMiddleScript.cs",
-              "DocumentMoniker": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\PipeMiddleScript.cs",
-              "RelativeDocumentMoniker": "Assets\\PipeMiddleScript.cs",
-              "ToolTip": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\PipeMiddleScript.cs",
-              "RelativeToolTip": "Assets\\PipeMiddleScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T12:58:48.765Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "PipeSpawnScript.cs",
-              "DocumentMoniker": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\PipeSpawnScript.cs",
-              "RelativeDocumentMoniker": "Assets\\PipeSpawnScript.cs",
-              "ToolTip": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\PipeSpawnScript.cs",
-              "RelativeToolTip": "Assets\\PipeSpawnScript.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwBQAAAAeAAAA",
+              "DocumentMoniker": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\Scripts\\PipeSpawnScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PipeSpawnScript.cs",
+              "ToolTip": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\Scripts\\PipeSpawnScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PipeSpawnScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T06:41:41.975Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PipeMoveScript.cs",
-              "DocumentMoniker": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\PipeMoveScript.cs",
-              "RelativeDocumentMoniker": "Assets\\PipeMoveScript.cs",
-              "ToolTip": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\PipeMoveScript.cs",
-              "RelativeToolTip": "Assets\\PipeMoveScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:05:44.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BirdScript.cs",
-              "DocumentMoniker": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\BirdScript.cs",
-              "RelativeDocumentMoniker": "Assets\\BirdScript.cs",
-              "ToolTip": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Flappy Bird\\Assets\\BirdScript.cs",
-              "RelativeToolTip": "Assets\\BirdScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:15:06.582Z"
+              "WhenOpened": "2024-05-17T08:26:19.278Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -31,9 +31,9 @@ public class PipeSpawnScript : MonoBehaviour
     }
     void SpawnPipe()
     {
-        BirdScript birdScript = FindObjectOfType<BirdScript>();
+        PlayerScript birdScript = FindObjectOfType<PlayerScript>();
 
-        // Check if bird is alive before spawning a pipe
+        // Check if Player is alive before spawning a pipe
         if (birdScript != null && birdScript.birdIsAlive)
         {
             float lowestPoint = transform.position.y - heightOffset;
