@@ -8,7 +8,7 @@ public class Turret : MonoBehaviour
     private float timer = 0;
     public GameObject projectile;
     public Transform firePoint;
-    public float fireInterval = 1; // Time in seconds between each shot
+    public float fireInterval = 1;
     
 
     void Update()

@@ -13,7 +13,6 @@ public class LogicScript : MonoBehaviour
 
     void Start()
     {
-        // Initialize the UnityEvent if it's not already assigned
         if (onEnemyHit == null)
         {
             onEnemyHit = new EnemyEvent();

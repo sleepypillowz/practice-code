@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Tower Defense\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|Assembly-CSharp.csproj|c:\\users\\sleepypillow\\documents\\github\\practice-code\\unity\\tower defense\\assets\\logicscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|Assembly-CSharp.csproj|solutionrelative:assets\\logicscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|Assembly-CSharp.csproj|C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Tower Defense\\assets\\enemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|Assembly-CSharp.csproj|solutionrelative:assets\\enemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|Assembly-CSharp.csproj|C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Tower Defense\\assets\\projectilescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|Assembly-CSharp.csproj|solutionrelative:assets\\projectilescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|Assembly-CSharp.csproj|c:\\users\\sleepypillow\\documents\\github\\practice-code\\unity\\tower defense\\assets\\logicscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|Assembly-CSharp.csproj|solutionrelative:assets\\logicscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|Assembly-CSharp.csproj|c:\\users\\sleepypillow\\documents\\github\\practice-code\\unity\\tower defense\\assets\\turretscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|Assembly-CSharp.csproj|C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Tower Defense\\assets\\turretscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|Assembly-CSharp.csproj|solutionrelative:assets\\turretscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|Assembly-CSharp.csproj|C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Tower Defense\\assets\\projectilescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|Assembly-CSharp.csproj|solutionrelative:assets\\projectilescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "TurretScript.cs",
               "DocumentMoniker": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Tower Defense\\Assets\\TurretScript.cs",
               "RelativeDocumentMoniker": "Assets\\TurretScript.cs",
               "ToolTip": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Tower Defense\\Assets\\TurretScript.cs",
               "RelativeToolTip": "Assets\\TurretScript.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwA8AAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T12:36:34.32Z",
               "IsPinned": true,
@@ -44,39 +44,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LogicScript.cs",
               "DocumentMoniker": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Tower Defense\\Assets\\LogicScript.cs",
               "RelativeDocumentMoniker": "Assets\\LogicScript.cs",
               "ToolTip": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Tower Defense\\Assets\\LogicScript.cs",
               "RelativeToolTip": "Assets\\LogicScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T18:03:41.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "EnemyScript.cs",
               "DocumentMoniker": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Tower Defense\\Assets\\EnemyScript.cs",
               "RelativeDocumentMoniker": "Assets\\EnemyScript.cs",
               "ToolTip": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Tower Defense\\Assets\\EnemyScript.cs",
               "RelativeToolTip": "Assets\\EnemyScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T17:38:52.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ProjectileScript.cs",
               "DocumentMoniker": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Tower Defense\\Assets\\ProjectileScript.cs",
               "RelativeDocumentMoniker": "Assets\\ProjectileScript.cs",
               "ToolTip": "C:\\Users\\sleepypillow\\Documents\\GitHub\\practice-code\\Unity\\Tower Defense\\Assets\\ProjectileScript.cs",
               "RelativeToolTip": "Assets\\ProjectileScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T12:35:12.16Z",
               "EditorCaption": ""
