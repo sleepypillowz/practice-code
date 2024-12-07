@@ -11,10 +11,13 @@
 </head>
 
 <body>
-  <div class="centered-content">
-    <!--<img class="logo" src="{% static 'images/logo.png' %}" alt="logo">-->
-    <form action="{% url 'register' %}" method="get">
-      <button class="btn" type="submit">Click to Enter Form</button>
+  <div class="container">
+    <h1>Home</h1>
+    <p>Welcome, {{request.user.username}}!</p>
+    <a href="{% url 'protected' %}">Go To Your Protected Page!</a>
+    <form action="{% url 'logout' %}" method="post">
+      {% csrf_token %}
+      <button class="btn" type="submit">Logout</button>
     </form>
   </div>
 </body>
